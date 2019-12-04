@@ -76,7 +76,7 @@ public class CustomSword extends CustomItemStack {
         modifiers.add(damage);
         compound.set("AttributeModifiers", modifiers);
         nmsStack.setTag(compound);
-		is = CraftItemStack.asCraftCopy(is);
+        is = CraftItemStack.asBukkitCopy(nmsStack);
 		return is;
 	}
 	
@@ -105,7 +105,7 @@ public class CustomSword extends CustomItemStack {
         modifiers.add(damage);
         compound.set("AttributeModifiers", modifiers);
         nmsStack.setTag(compound);
-		is = CraftItemStack.asCraftCopy(is);
+		is = CraftItemStack.asBukkitCopy(nmsStack);
 		return is;
 	}
 	

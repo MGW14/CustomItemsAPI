@@ -55,15 +55,15 @@ public class AntiCraftListener implements Listener {
 				ItemStack bottomright = e.getInventory().getItem(7);
 				ItemStack bottommid = e.getInventory().getItem(8);
 				ItemStack bottomleft = e.getInventory().getItem(9);
-				if (!isPossible(topleft, recipe.getTopleft())) break;
-				if (!isPossible(topmid, recipe.getTopmid())) break;
-				if (!isPossible(topright, recipe.getTopright())) break;
-				if (!isPossible(midleft, recipe.getMiddleleft())) break;
-				if (!isPossible(midmid, recipe.getMiddlemid())) break;
-				if (!isPossible(midright, recipe.getMiddleright())) break;
-				if (!isPossible(bottomright, recipe.getDownright())) break;
-				if (!isPossible(bottommid, recipe.getDownmid())) break;
-				if (!isPossible(bottomleft, recipe.getDownleft())) break;
+				if (!isPossible(topleft, recipe.getTopleft())) e.getInventory().setResult(null);
+				if (!isPossible(topmid, recipe.getTopmid())) e.getInventory().setResult(null);
+				if (!isPossible(topright, recipe.getTopright())) e.getInventory().setResult(null);
+				if (!isPossible(midleft, recipe.getMiddleleft())) e.getInventory().setResult(null);
+				if (!isPossible(midmid, recipe.getMiddlemid())) e.getInventory().setResult(null);
+				if (!isPossible(midright, recipe.getMiddleright())) e.getInventory().setResult(null);
+				if (!isPossible(bottomright, recipe.getDownright())) e.getInventory().setResult(null);
+				if (!isPossible(bottommid, recipe.getDownmid())) e.getInventory().setResult(null);
+				if (!isPossible(bottomleft, recipe.getDownleft())) e.getInventory().setResult(null);
 				return;
 			}
 		}
@@ -85,7 +85,7 @@ public class AntiCraftListener implements Listener {
 		if (in.getType() == Material.AIR) return true;
 		if (in2.getMaterial() == Material.AIR) return true;
 		try {
-			if (!in2.hasCustomModelData() && !in.getItemMeta().hasCustomModelData()) return false;
+			if (!in2.hasCustomModelData()) return true;
 			return in.getItemMeta().getCustomModelData() == in2.getCustomModelData();
 		} catch (Exception e) {
 			return false;

@@ -72,8 +72,8 @@ public class CustomItemStack {
 			NBTTagCompound tag = is2.getOrCreateTag();
 			tag.setInt("CustomModelData", cis.getCustomModelData());
 			is2.setTag(tag);
+			is = CraftItemStack.asBukkitCopy(is2);
 		}
-		
 		return is;
 	}
 	
