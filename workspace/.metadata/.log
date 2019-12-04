@@ -1720,3 +1720,9 @@ java.io.FileNotFoundException: C:\Users\MCPfannkuchenYT\Documents\CustomItemsAPI
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:350)
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:313)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 21:19:25.898
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 21:19:25.900
+!MESSAGE Removed all models from server.
