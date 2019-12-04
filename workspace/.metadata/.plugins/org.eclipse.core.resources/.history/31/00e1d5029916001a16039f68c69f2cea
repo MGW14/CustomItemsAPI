@@ -1,0 +1,27 @@
+package work.mgnet.customitemsapi.data;
+
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapelessRecipe;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import work.mgnet.customitemsapi.CustomItemsAPI;
+
+public class HarchenTable extends ShapelessRecipe {
+
+	public HarchenTable(CustomItemsAPI me) {
+		super(new NamespacedKey(me, "harchentable"), getHarchen());
+		addIngredient(1, Material.CRAFTING_TABLE);
+		addIngredient(1, Material.OBSIDIAN);
+	}
+
+	private static ItemStack getHarchen() {
+		ItemStack is = new ItemStack(Material.SLIME_BALL);
+		ItemMeta im = is.getItemMeta();
+		im.setDisplayName("§fHarchen Table");
+		is.setItemMeta(im);
+		return is;
+	}
+
+}

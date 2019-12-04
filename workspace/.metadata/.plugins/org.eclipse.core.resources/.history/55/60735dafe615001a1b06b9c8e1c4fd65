@@ -1,0 +1,74 @@
+package work.mgnet.customstructuresapi.manager;
+
+import java.util.List;
+
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+
+public class Structure {
+	
+	public String name;
+	public List<Material> blocks;
+	public List<ItemStack> commonLoot;
+	public List<ItemStack> uncommonLoot;
+	public List<ItemStack> rareLoot;
+	public List<ItemStack> epicLoot;
+	public List<ItemStack> legendaryLoot;
+	
+	public Structure(String name, List<Material> blocks, List<ItemStack> commonLoot,
+			List<ItemStack> uncommonLoot, List<ItemStack> rareLoot, List<ItemStack> epicLoot,
+			List<ItemStack> legendaryLoot) {
+		super();
+		this.name = name;
+		this.blocks = blocks;
+		this.commonLoot = commonLoot;
+		this.uncommonLoot = uncommonLoot;
+		this.rareLoot = rareLoot;
+		this.epicLoot = epicLoot;
+		this.legendaryLoot = legendaryLoot;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public List<Material> getBlocks() {
+		return blocks;
+	}
+	public void setBlocks(List<Material> blocks) {
+		this.blocks = blocks;
+	}
+	public List<ItemStack> getCommonLoot() {
+		return commonLoot;
+	}
+	public void setCommonLoot(List<ItemStack> commonLoot) {
+		this.commonLoot = commonLoot;
+	}
+	public List<ItemStack> getUncommonLoot() {
+		return uncommonLoot;
+	}
+	public void setUncommonLoot(List<ItemStack> uncommonLoot) {
+		this.uncommonLoot = uncommonLoot;
+	}
+	public List<ItemStack> getRareLoot() {
+		return rareLoot;
+	}
+	public void setRareLoot(List<ItemStack> rareLoot) {
+		this.rareLoot = rareLoot;
+	}
+	public List<ItemStack> getEpicLoot() {
+		return epicLoot;
+	}
+	public void setEpicLoot(List<ItemStack> epicLoot) {
+		this.epicLoot = epicLoot;
+	}
+	public List<ItemStack> getLegendaryLoot() {
+		return legendaryLoot;
+	}
+	public void setLegendaryLoot(List<ItemStack> legendaryLoot) {
+		this.legendaryLoot = legendaryLoot;
+	}
+	
+}

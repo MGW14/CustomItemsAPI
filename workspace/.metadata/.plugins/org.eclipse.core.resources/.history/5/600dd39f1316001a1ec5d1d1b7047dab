@@ -1,0 +1,15 @@
+package work.mgnet.customitemsapi.data;
+
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.inventory.ShapelessRecipe;
+
+import work.mgnet.customitemsapi.CustomItemsAPI;
+
+public class HarchenTable extends ShapelessRecipe {
+
+	public HarchenTable(CustomItemsAPI me) {
+		super(new NamespacedKey(me, "harchentable"), CustomItemStack.fromCiS(new CustomItemStack(Material.SLIME_BALL, true, true, 1, 1, "§fHarchen Table")));
+	}
+
+}

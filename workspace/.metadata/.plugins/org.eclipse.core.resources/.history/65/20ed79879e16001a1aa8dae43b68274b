@@ -1,0 +1,35 @@
+package work.mgnet.customitemsapi.listener;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryInteractEvent;
+import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+import work.mgnet.customitemsapi.data.CustomSword;
+
+public class HarchenTableListener implements Listener {
+	
+	@EventHandler
+	public void onClick(InventoryInteractEvent e) {
+		System.out.println("asd");
+	}
+	
+	@EventHandler
+	public void onCraft(PlayerInteractEvent e) {
+		if (e.hasItem() && e.getItem().getItemMeta().isUnbreakable() && e.getItem().getType() == Material.SLIME_BALL) {
+			e.getPlayer().openInventory(Bukkit.createInventory(e.getPlayer(), InventoryType.WORKBENCH, "Harchen Table"));
+			e.getPlayer().updateInventory();
+		}
+	}
+	
+	@EventHandler
+	public void onHarchen(PlayerJoinEvent e) {
+		e.getPlayer().getInventory().addItem(CustomSword.fromCiS(new CustomSword(Material.SLIME_BALL, true, true, 1, 1, "§fHarchen Table", 1, null, null)));
+	}
+	
+	
+}

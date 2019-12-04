@@ -1,0 +1,7 @@
+package work.mgnet.customstructuresapi.manager;
+
+public class Structure {
+	
+	public String name;
+	
+}

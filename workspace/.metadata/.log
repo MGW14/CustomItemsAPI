@@ -1,0 +1,741 @@
+!SESSION 2019-12-03 16:45:33.659 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\MCPfannkuchenYT\Documents\MorePVP\workspace\ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2019-12-03 16:45:37.229
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-03 16:45:37.229
+!MESSAGE A conflict occurred for ALT+T:
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.TimelineShowView,Timeline / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25e8a111,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.GraphShowView,Graph / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21022cbb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:45.116
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:45.117
+!MESSAGE Fetching all notifications
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-03 16:45:45.617
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MCPfannkuchenYT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:45.897
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:46.118
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:46.168
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:46.169
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:46.177
+!MESSAGE Save JSON notifications content to cache file C:\Users\MCPfannkuchenYT\Documents\MorePVP\workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:46.937
+!MESSAGE Icon https://vaadin.com/documents/10187/10395/tori-icon-blue-bg-90px/4597dffb-3868-4711-b422-8fc3e71844e6?t=1394217295000 is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:47.201
+!MESSAGE Image https://website.vaadin.com/hubfs/plus-blog-banner.png is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:47.919
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/Blog/IMG_3884.jpg is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:47.981
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/designer-flex-editor.png is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:48.038
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/chrome-dev-summit.jpg is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:48.094
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/nextgencomp-twitter-banner.png is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:48.281
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/vaadin-devoxx-2019.jpg is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:48.359
+!MESSAGE Image https://cdn2.hubspot.net/hubfs/1840687/devoxx-featured.jpg is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:49.168
+!MESSAGE Image https://vaadin.com/image/image_gallery?img_id=3851299&t=1385741714872 is downloaded
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:45:49.173
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-03 16:45:57.636
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-03 16:45:57.653
+!MESSAGE IvyDE plugin started
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 16:46:09.453
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 16:46:14.917
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 16:46:14.917
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 16:46:14.918
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:45:59.317
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:45:59.317
+!MESSAGE Removed all models from server.
+!SESSION 2019-12-03 18:58:14.027 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\MCPfannkuchenYT\Documents\CustomStructureAPI\workspace\ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2019-12-03 18:58:17.625
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-03 18:58:17.625
+!MESSAGE A conflict occurred for ALT+T:
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.TimelineShowView,Timeline / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25ee3caa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.GraphShowView,Graph / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3fecb076,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:23.444
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:23.448
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:23.766
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:23.767
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-03 18:58:24.034
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MCPfannkuchenYT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:24.589
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:24.701
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:24.817
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:24.818
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:24.823
+!MESSAGE Save JSON notifications content to cache file C:\Users\MCPfannkuchenYT\Documents\CustomStructureAPI\workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:24.969
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-03 18:58:29.302
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-03 18:58:29.317
+!MESSAGE IvyDE plugin started
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 18:58:53.455
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 19:02:56.440
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 19:02:56.442
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 19:02:56.445
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 19:07:48.310
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 19:07:48.311
+!MESSAGE Removed all models from server.
+!SESSION 2019-12-03 21:45:07.711 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2019-12-03 21:46:49.520
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-03 21:46:49.520
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-12-03 21:46:50.204
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-12-03 21:46:50.230
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2019-12-03 21:46:50.895
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-03 21:46:50.895
+!MESSAGE A conflict occurred for ALT+T:
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.TimelineShowView,Timeline / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@685e5967,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.GraphShowView,Graph / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@106387cf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:57.202
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:57.206
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:57.636
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:57.637
+!MESSAGE Fetching all notifications
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-03 21:46:57.869
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MCPfannkuchenYT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:58.247
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:58.517
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:58.621
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:58.622
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:58.626
+!MESSAGE Save JSON notifications content to cache file C:\Users\MCPfannkuchenYT\Documents\CustomItemsAPI\workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:46:58.801
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-03 21:47:05.104
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-03 21:47:05.156
+!MESSAGE IvyDE plugin started
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 21:47:05.744
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 21:47:05.745
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-03 21:47:05.746
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:47:27.277
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:47:28.970
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-03 21:47:28.970
+!MESSAGE Removed all models from server.
+!SESSION 2019-12-04 13:28:02.535 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2019-12-04 13:28:15.122
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-04 13:28:15.122
+!MESSAGE A conflict occurred for ALT+T:
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.TimelineShowView,Timeline / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@66e44f9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.GraphShowView,Graph / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@79f82fc4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:22.539
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:22.545
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:23.408
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:23.410
+!MESSAGE Fetching all notifications
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-04 13:28:24.004
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MCPfannkuchenYT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:24.015
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:24.020
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:24.027
+!MESSAGE Save JSON notifications content to cache file C:\Users\MCPfannkuchenYT\Documents\CustomItemsAPI\workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:24.130
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:24.373
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:24.887
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 13:28:52.558
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 13:44:29.469
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 13:44:29.488
+!MESSAGE IvyDE plugin started
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 13:51:30.664
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 13:51:30.665
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 13:51:30.665
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:26:10.367
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:26:10.368
+!MESSAGE Removed all models from server.
+!SESSION 2019-12-04 14:26:11.615 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2019-12-04 14:27:06.297
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-04 14:27:06.297
+!MESSAGE A conflict occurred for ALT+T:
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.TimelineShowView,Timeline / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5dfb078,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.GraphShowView,Graph / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2d21d12b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:11.932
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:11.936
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:12.366
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:12.368
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-04 14:27:12.801
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MCPfannkuchenYT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:12.911
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:12.996
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:13.365
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:13.366
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:13.372
+!MESSAGE Save JSON notifications content to cache file C:\Users\MCPfannkuchenYT\Documents\CustomItemsAPI\workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:13.793
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:27:42.129
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-12-04 14:28:17.012
+!MESSAGE DevStyle theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-12-04 14:28:17.052
+!MESSAGE DevStyle is restoring colors that were configured prior to DevStyle being enabled
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 14:28:24.109
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 14:28:24.125
+!MESSAGE IvyDE plugin started
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:29.687
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:29.689
+!MESSAGE Removed all models from server.
+!SESSION 2019-12-04 14:28:30.701 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Users/MCPfannkuchenYT/Documents/CustomItemsAPI/workspace/ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2019-12-04 14:28:36.819
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-04 14:28:36.819
+!MESSAGE A conflict occurred for ALT+T:
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.TimelineShowView,Timeline / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b5e45bc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.GraphShowView,Graph / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10c1682b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:42.006
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:42.010
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:42.379
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:42.380
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:42.846
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:42.879
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:42.880
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:42.884
+!MESSAGE Save JSON notifications content to cache file C:\Users\MCPfannkuchenYT\Documents\CustomItemsAPI\workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-04 14:28:42.897
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MCPfannkuchenYT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:43.030
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:28:43.621
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 14:28:43.767
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 14:28:43.787
+!MESSAGE IvyDE plugin started
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 14:29:12.018
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 14:33:36.985
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 14:33:36.989
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 14:33:36.989
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:05:42.402
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:05:42.403
+!MESSAGE Removed all models from server.
+!SESSION 2019-12-04 15:06:57.045 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2019-12-04 15:08:12.085
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-04 15:08:12.085
+!MESSAGE A conflict occurred for ALT+T:
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.TimelineShowView,Timeline / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3dedc8b8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.GraphShowView,Graph / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5352bc0e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:17.496
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:17.498
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:17.870
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:17.875
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-04 15:08:18.202
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MCPfannkuchenYT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:18.487
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:18.836
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:18.838
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:18.843
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:18.848
+!MESSAGE Save JSON notifications content to cache file C:\Users\MCPfannkuchenYT\Documents\CustomItemsAPI\workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:18.917
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 15:08:47.724
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 15:15:35.755
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 15:15:35.769
+!MESSAGE IvyDE plugin started
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 15:36:16.499
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 15:36:16.500
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 15:36:16.500
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:15:23.370
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:15:23.370
+!MESSAGE Removed all models from server.
+!SESSION 2019-12-04 18:19:29.350 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2019-12-04 18:19:50.285
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-04 18:19:50.285
+!MESSAGE A conflict occurred for ALT+T:
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.TimelineShowView,Timeline / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6aff157e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+T,
+	ParameterizedCommand(Command(org.synthclipse.ide.command.GraphShowView,Graph / Show View,
+		,
+		Category(org.synthclipse.category,Synthclipse,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@65fa1cd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:55.040
+!MESSAGE Schedule fetching all notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:55.050
+!MESSAGE Schedule version update jobs
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:55.395
+!MESSAGE Requesting user info (notification settings URL)
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:55.400
+!MESSAGE Fetching all notifications
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-04 18:19:55.783
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MCPfannkuchenYT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:56.056
+!MESSAGE BrowserCore initialized.
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:56.285
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:56.285
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:56.293
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:56.298
+!MESSAGE Save JSON notifications content to cache file C:\Users\MCPfannkuchenYT\Documents\CustomItemsAPI\workspace\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:19:56.449
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 18:19:57.944
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2019-12-04 18:19:57.958
+!MESSAGE IvyDE plugin started
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 18:19:59.872
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 18:19:59.873
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-04 18:19:59.873
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:20:25.104
+!MESSAGE All vaadin 7+ projects : []
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:23:41.245
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer 1 0 2019-12-04 18:23:41.246
+!MESSAGE Removed all models from server.

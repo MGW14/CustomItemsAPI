@@ -1,0 +1,36 @@
+package work.mgnet.customitemsapi;
+
+import java.util.ArrayList;
+import java.util.UUID;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import work.mgnet.customitemsapi.data.CustomItemStack;
+import work.mgnet.customitemsapi.data.CustomRecipe;
+import work.mgnet.customitemsapi.data.CustomSword;
+import work.mgnet.customitemsapi.data.CustomSwordRecipe;
+import work.mgnet.customitemsapi.listener.AntiCraftListener;
+
+public class CustomItemsAPI extends JavaPlugin {
+	
+	public static ArrayList<CustomRecipe> recipes = new ArrayList<CustomRecipe>();
+	public static ArrayList<CustomSwordRecipe> recipesSword = new ArrayList<CustomSwordRecipe>();
+	
+	@Override
+	public void onLoad() {
+		recipesSword.add(new CustomSwordRecipe(null, null, null, null, new CustomItemStack(Material.IRON_SWORD, false, false, 1, 1, "§fIron Sword"), null, null, null, null, new CustomSword(Material.IRON_SWORD, true, false, 1, 1, "§fUnbreakable Iron Sword", 6, null, null)));
+		this.getLogger().info("Loading CustomItemsAPI");
+	}
+	
+	@Override
+	public void onEnable() {
+		this.getLogger().info("Enabling CustomItemsAPI");
+		for (CustomRecipe customRecipe : recipes) {
+			Bukkit.addRecipe(customRecipe.getRecipe(UUID.randomUUID().toString(), this));
+		}
+		Bukkit.getPluginManager().registerEvents(new AntiCraftListener(), this);
+	}
+	
+}

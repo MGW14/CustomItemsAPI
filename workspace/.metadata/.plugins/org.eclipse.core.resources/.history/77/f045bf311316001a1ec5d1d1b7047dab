@@ -1,0 +1,7 @@
+package work.mgnet.customitemsapi.data;
+
+import org.bukkit.inventory.ShapelessRecipe;
+
+public class HarchenTable extends ShapelessRecipe {
+
+}

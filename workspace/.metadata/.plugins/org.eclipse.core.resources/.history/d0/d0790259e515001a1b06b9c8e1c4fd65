@@ -1,0 +1,11 @@
+package work.mgnet.customstructuresapi.manager;
+
+import java.util.ArrayList;
+
+public class Structure {
+	
+	public String name;
+	public ArrayList<Material> blocks;
+	public String name;
+	
+}

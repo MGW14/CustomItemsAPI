@@ -1,0 +1,44 @@
+package work.mgnet.customstructuresapi.todo;
+
+import org.bukkit.Chunk;
+import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.block.Chest;
+import org.bukkit.inventory.ItemStack;
+
+import work.mgnet.customstructuresapi.manager.BlockLocation;
+import work.mgnet.customstructuresapi.manager.Structure;
+
+public class StructureSpawner {
+	
+	public static void spawn(Structure structure, Block bb, Chunk chunk) {
+		if (bb.getType() == Material.WATER || bb.getType() == Material.LAVA)
+			return;
+		
+		for (BlockLocation bl : structure.getBlocks()) {
+			bl.getLoc(bb.getLocation()).getBlock().setType(bl.getMat());
+			if (bl.getMat() == Material.CHEST) {
+				System.out.println("Filling Chest");
+				int loot = 0;
+				while (loot < 5) {
+					for (ItemStack commonLoot : structure.getCommonLoot()) {
+						if (LootRandomizer.spawnLoot(3)) ((Chest) bl.getLoc(bb.getLocation()).getBlock().getState()).getInventory().addItem(commonLoot);
+					}
+					for (ItemStack uncommonLoot : structure.getUncommonLoot()) {
+						if (LootRandomizer.spawnLoot(10)) ((Chest) bl.getLoc(bb.getLocation()).getBlock().getState()).getInventory().addItem(uncommonLoot);
+					}
+					for (ItemStack rareLoot : structure.getRareLoot()) {
+						if (LootRandomizer.spawnLoot(50)) ((Chest) bl.getLoc(bb.getLocation()).getBlock().getState()).getInventory().addItem(rareLoot);
+					}
+					for (ItemStack epicLoot : structure.getEpicLoot()) {
+						if (LootRandomizer.spawnLoot(100)) ((Chest) bl.getLoc(bb.getLocation()).getBlock().getState()).getInventory().addItem(epicLoot);
+					}
+					for (ItemStack legendaryLoot : structure.getLegendaryLoot()) {
+						if (LootRandomizer.spawnLoot(100)) ((Chest) bl.getLoc(bb.getLocation()).getBlock().getState()).getInventory().addItem(legendaryLoot);
+					}
+				}
+			}
+		}
+	}
+	
+}

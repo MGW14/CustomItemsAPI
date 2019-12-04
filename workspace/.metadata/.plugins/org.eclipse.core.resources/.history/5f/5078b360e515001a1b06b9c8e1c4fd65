@@ -1,0 +1,13 @@
+package work.mgnet.customstructuresapi.manager;
+
+import java.util.ArrayList;
+
+import org.bukkit.Material;
+
+public class Structure {
+	
+	public String name;
+	public ArrayList<Material> blocks;
+	public ArrayList<String> lootTable;
+	
+}

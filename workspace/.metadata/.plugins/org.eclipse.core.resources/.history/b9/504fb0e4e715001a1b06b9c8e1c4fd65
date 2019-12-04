@@ -1,0 +1,5 @@
+package work.mgnet.customstructuresapi.todo;
+
+public class LootRandomizer {
+
+}

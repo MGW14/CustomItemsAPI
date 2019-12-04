@@ -1,0 +1,9 @@
+package work.mgnet.customitemsapi.runnable;
+
+import org.bukkit.entity.Player;
+
+public class EventRunnable extends Thread {
+	
+	public Player p;
+	
+}

@@ -1,0 +1,5 @@
+package work.mgnet.customstructuresapi.listener;
+
+public class ChunkListener implements Listener {
+
+}

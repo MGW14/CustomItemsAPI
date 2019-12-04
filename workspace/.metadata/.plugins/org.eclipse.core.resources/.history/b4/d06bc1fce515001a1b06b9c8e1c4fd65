@@ -1,0 +1,21 @@
+package work.mgnet.customstructuresapi.manager;
+
+import java.util.ArrayList;
+
+public class StructureManager {
+	
+	public ArrayList<Structure> structures = new ArrayList<Structure>();
+	
+	public void addStructure(Structure structure) {
+		structures.add(structure);
+	}
+	
+	public void removeStructure(Structure structure) {
+		structures.remove(structure);
+	}
+	
+	public Structure random() {
+		
+	}
+	
+}

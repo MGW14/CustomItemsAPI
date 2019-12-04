@@ -1,0 +1,72 @@
+package work.mgnet.customitemsapi.listener;
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.PrepareItemCraftEvent;
+import org.bukkit.inventory.ItemStack;
+
+import work.mgnet.customitemsapi.CustomItemsAPI;
+import work.mgnet.customitemsapi.data.CustomItemStack;
+import work.mgnet.customitemsapi.data.CustomRecipe;
+
+public class AntiCraftListener implements Listener {
+	
+	@EventHandler
+	public void onCraft(PrepareItemCraftEvent e) {
+		if (e.getInventory().getResult() == null) return;
+		for (CustomRecipe recipe : CustomItemsAPI.recipes) {
+			if (e.getInventory().getResult().hasItemMeta() && e.getInventory().getRecipe().getResult().getItemMeta().hasDisplayName() && e.getInventory().getResult().getItemMeta().getDisplayName().equalsIgnoreCase(CustomItemStack.fromCiSforCrafting(recipe.getResult()).getItemMeta().getDisplayName())) {
+				ItemStack topleft = e.getInventory().getItem(1);
+				ItemStack topmid = e.getInventory().getItem(2);
+				ItemStack topright = e.getInventory().getItem(3);
+				ItemStack midleft = e.getInventory().getItem(4);
+				ItemStack midmid = e.getInventory().getItem(5);
+				ItemStack midright = e.getInventory().getItem(6);
+				ItemStack bottomright = e.getInventory().getItem(7);
+				ItemStack bottommid = e.getInventory().getItem(8);
+				ItemStack bottomleft = e.getInventory().getItem(9);
+				if (recipe.getTopleft().hasCustomModelData()) {
+					if (recipe.getTopleft().getCustomModelData() == topleft.getItemMeta().getCustomModelData()) {
+						if (recipe.getTopmid().hasCustomModelData()) {
+							if (recipe.getTopmid().getCustomModelData() == topmid.getItemMeta().getCustomModelData()) {
+								if (recipe.getTopright().hasCustomModelData()) {
+									if (recipe.getTopright().getCustomModelData() == topright.getItemMeta().getCustomModelData()) {
+										if (recipe.getMiddleleft().hasCustomModelData()) {
+											if (recipe.getMiddleleft().getCustomModelData() == midleft.getItemMeta().getCustomModelData()) {
+												if (recipe.getMiddleright().hasCustomModelData()) {
+													if (recipe.getMiddleright().getCustomModelData() == midright.getItemMeta().getCustomModelData()) {
+														if (recipe.getMiddlemid().hasCustomModelData()) {
+															if (recipe.getMiddlemid().getCustomModelData() == midmid.getItemMeta().getCustomModelData()) {
+																
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				if (recipe.getTopleft().getCustomModelData() == topleft.getItemMeta().getCustomModelData() && recipe.getTopmid().getCustomModelData() == topmid.getItemMeta().getCustomModelData() && recipe.getTopright().getCustomModelData() == topright.getItemMeta().getCustomModelData() && recipe.getMiddleleft().getCustomModelData() == midleft.getItemMeta().getCustomModelData() && recipe.getMiddlemid().getCustomModelData() == midmid.getItemMeta().getCustomModelData() && recipe.getMiddleright().getCustomModelData() == midright.getItemMeta().getCustomModelData() && recipe.getDownleft().getCustomModelData() == bottomleft.getItemMeta().getCustomModelData() && recipe.getDownmid().getCustomModelData() == bottommid.getItemMeta().getCustomModelData() && recipe.getDownright().getCustomModelData() == bottomright.getItemMeta().getCustomModelData()) {
+					System.out.println("OK!");
+					return;
+				}
+			}
+		}
+		for (int i = 1; i < 10; i++) {
+			try {
+				if (e.getInventory().getItem(i).getItemMeta().hasCustomModelData() || e.getInventory().getItem(i).getItemMeta().isUnbreakable()) {
+					e.getInventory().setResult(null);
+				}
+			} catch (Exception exc) {
+				
+			}
+		}
+		
+	}
+
+	
+}

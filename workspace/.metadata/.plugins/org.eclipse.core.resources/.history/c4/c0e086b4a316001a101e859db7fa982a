@@ -1,0 +1,26 @@
+package work.mgnet.customitemsapi;
+
+import java.util.ArrayList;
+
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import work.mgnet.customitemsapi.data.CustomRecipe;
+import work.mgnet.customitemsapi.listener.AntiCraftListener;
+
+public class CustomItemsAPI extends JavaPlugin {
+	
+	public static ArrayList<CustomRecipe> recipes;
+
+	@Override
+	public void onLoad() {
+		this.getLogger().info("Loading CustomItemsAPI");
+	}
+	
+	@Override
+	public void onEnable() {
+		this.getLogger().info("Enabling CustomItemsAPI");
+		Bukkit.getPluginManager().registerEvents(new AntiCraftListener(), this);
+	}
+	
+}

@@ -1,0 +1,7 @@
+package work.mgnet.customitemsapi.runnable;
+
+public class EventRunnable extends Thread {
+	
+	public Player p;
+	
+}

@@ -1,0 +1,72 @@
+package work.mgnet.customstructuresapi.listener;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerCommandPreprocessEvent;
+
+import work.mgnet.customstructuresapi.CustomStructuresAPI;
+import work.mgnet.customstructuresapi.manager.Structure;
+import work.mgnet.customstructuresapi.todo.StructureSpawner;
+
+public class CommandListener implements Listener {
+	
+	@EventHandler
+	public void onCommand(PlayerCommandPreprocessEvent e) {
+		// Overwrite /locate Command
+		if (e.getMessage().toLowerCase().startsWith("/locate") || e.getMessage().toLowerCase().startsWith("/minecraft:locate") || e.getMessage().toLowerCase().startsWith("locate") || e.getMessage().toLowerCase().startsWith("minecraft:locate")) {
+			if (e.getMessage().toLowerCase().split(" ").length > 1) { // Check if Command has Arguments
+				ArrayList<String> structureNames = new ArrayList<String>(); // List of Structure Names
+				for (Structure structure : CustomStructuresAPI.structureManager.getStructures()) { 
+					structureNames.add(structure.getName().toLowerCase()); // Add Structure Name to List
+				}
+				if (structureNames.contains(e.getMessage().toLowerCase().split(" ")[1])) { // Is the Structure registered?
+					e.setCancelled(true); // Cancel the Event
+					boolean isNativeLanguage = isNativeLanguage(e.getPlayer());
+					if (StructureSpawner.placedStructures.containsKey(e.getMessage().toLowerCase().split(" ")[1])) { // Is there a spawned Structure?
+						if (isNativeLanguage) {
+							e.getPlayer().sendMessage("T"); // Native Message
+						} else {
+							Location loc = StructureSpawner.placedStructures.get(e.getMessage().toLowerCase().split(" ")[1]);
+							e.getPlayer().sendMessage("The nearest " + e.getMessage().toLowerCase().split(" ")[1] + " is at §a[" + loc.getBlockX() + ", ~, " + loc.getBlockZ()); // English Message
+						}
+					} else {
+						if (isNativeLanguage) {
+							e.getPlayer().sendMessage("§cDieses Bauwerk konnte in der Nähe nicht gefunden werden"); // Native Message
+						} else {
+							e.getPlayer().sendMessage("§cCould not find that structure nearby"); // English Message
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	// Get if the Language of the Player is GERMAN
+	public boolean isNativeLanguage(Player p) {
+		try {
+			Object ep = getMethod("getHandle", p.getClass()).invoke(p, (Object[]) null);
+			Field f = ep.getClass().getDeclaredField("locale");
+			f.setAccessible(true);
+			if (f.get(ep) instanceof String && ((String) f.get(ep)).equalsIgnoreCase("de_DE")) return true;
+		} catch (Exception e) {
+			Bukkit.getLogger().info("Couldn't get Player's Language");
+		} 
+		return false;
+	}
+	
+	// Get Method of the Player Class
+	private Method getMethod(String name, Class<?> clazz) {
+		for (Method	m : clazz.getDeclaredMethods()) {
+			if (m.getName().equals(name)) return m;
+		}
+		return null;
+	}
+	
+}

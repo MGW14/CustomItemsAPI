@@ -1,0 +1,31 @@
+package work.mgnet.customstructuresapi;
+
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import work.mgnet.customstructuresapi.listener.ChunkListener;
+import work.mgnet.customstructuresapi.listener.CommandListener;
+import work.mgnet.customstructuresapi.manager.StructureManager;
+
+public class CustomStructuresAPI extends JavaPlugin {
+		
+	public static StructureManager structureManager = new StructureManager(); // Structure Instance
+	
+	@Override
+	public void onEnable() {
+		this.getLogger().info("CustomStructuresAPI is now going to enable.");
+		this.getLogger().info("There are " + structureManager.getStructures().size() + " loaded structures.");
+		Bukkit.getPluginManager().registerEvents(new ChunkListener(), this); // Registering Chunk Listener
+		Bukkit.getPluginManager().registerEvents(new CommandListener(), this); // Registering Locate Listener
+		this.getLogger().info("CustomStructuresAPI was enabled. OK");
+	}
+	
+	public void saveConfiguration() {
+		
+	}
+	
+	public void loadConfiguration() {
+		
+	}
+	
+}

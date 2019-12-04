@@ -1,0 +1,36 @@
+package work.mgnet.customstructuresapi.manager;
+
+import org.bukkit.Location;
+import org.bukkit.Material;
+
+public class BlockLocation {
+	
+	public int x;
+	public int y;
+	public int z;
+	public Material mat;
+	public BlockLocation(int x, int y, int z, Material mat) {
+		super();
+		this.x = x;
+		this.y = y;
+		this.z = z;
+		this.mat = mat;
+	}
+	public int getX() {
+		return x;
+	}
+	public int getY() {
+		return y;
+	}
+	public int getZ() {
+		return z;
+	}
+	public Material getMat() {
+		return mat;
+	}
+	
+	public Location getLoc(Location loc) {
+		return new Location(loc.getWorld(), loc.getX() + x, loc.getY() + y, loc.getZ() + z);
+	}
+	
+}

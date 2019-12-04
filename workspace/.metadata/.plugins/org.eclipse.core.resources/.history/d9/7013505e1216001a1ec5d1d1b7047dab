@@ -1,0 +1,62 @@
+package work.mgnet.customitemsapi.data;
+
+public class CustomRecipe {
+	
+	private CustomItemStack topleft;
+	private CustomItemStack topmid;
+	private CustomItemStack topright;
+	private CustomItemStack middleleft;
+	private CustomItemStack middlemid;
+	private CustomItemStack middleright;
+	private CustomItemStack downleft;
+	private CustomItemStack downmid;
+	private CustomItemStack downright;
+	
+	private CustomItemStack result;
+	
+	public CustomRecipe(CustomItemStack topleft, CustomItemStack topmid, CustomItemStack topright,
+			CustomItemStack middleleft, CustomItemStack middlemid, CustomItemStack middleright,
+			CustomItemStack downleft, CustomItemStack downmid, CustomItemStack downright, CustomItemStack result) {
+		super();
+		this.topleft = topleft;
+		this.topmid = topmid;
+		this.topright = topright;
+		this.middleleft = middleleft;
+		this.middlemid = middlemid;
+		this.middleright = middleright;
+		this.downleft = downleft;
+		this.downmid = downmid;
+		this.downright = downright;
+		this.setResult(result);
+	}
+	public CustomItemStack getTopleft() {
+		return topleft;
+	}
+	public CustomItemStack getTopmid() {
+		return topmid;
+	}
+	public CustomItemStack getTopright() {
+		return topright;
+	}
+	public CustomItemStack getMiddleleft() {
+		return middleleft;
+	}
+	public CustomItemStack getMiddlemid() {
+		return middlemid;
+	}
+	public CustomItemStack getMiddleright() {
+		return middleright;
+	}
+	public CustomItemStack getDownleft() {
+		return downleft;
+	}
+	public CustomItemStack getDownmid() {
+		return downmid;
+	}
+	public CustomItemStack getDownright() {
+		return downright;
+	}
+	public CustomItemStack getResult() {
+		return result;
+	}
+}

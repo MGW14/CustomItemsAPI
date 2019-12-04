@@ -1,0 +1,4 @@
+name: CustomStructuresAPI
+main: work.mgnet.customstructuresapi.CustomStructuresAPI
+api-version: 1.14
+version: 1.0

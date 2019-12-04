@@ -1,0 +1,5 @@
+package work.mgnet.customitemsapi.listener;
+
+public class CustomSwordListener {
+
+}

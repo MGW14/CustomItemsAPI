@@ -1,0 +1,14 @@
+# Important Stuff
+name: CustomItemsAPI
+main: work.mgnet.customitemsapi.CustomItemsAPI
+version: 1.0
+description: This is an API for custom items
+author: MCPfannkuchenYT
+website: www.mgnet.work
+prefix: CIAPI
+
+# Defining API-Version to not get a warning in the console and use 1.14.4 Blocks!
+api-version: 1.14
+
+# Defining Loading Point to not start at startup
+load: POSTWORLD

@@ -1,0 +1,73 @@
+package work.mgnet.customitemsapi.data;
+
+import org.bukkit.Material;
+import org.bukkit.craftbukkit.v1_14_R1.inventory.CraftItemStack;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import net.minecraft.server.v1_14_R1.NBTTagCompound;
+
+public class CustomItemStack {
+	
+	private Material material;
+	private boolean hasCustomModelData;
+	private int customModelData;
+	private int amount;
+	private String name;
+	
+	public CustomItemStack(Material material, boolean unbreaking, boolean hasCustomModelData, int customModelData, int amount, String name) {
+		this.material = material;
+		this.hasCustomModelData = hasCustomModelData;
+		this.customModelData = customModelData;
+		this.amount = amount;
+		this.name = name;
+	}
+	
+	public Material getMaterial() {
+		return material;
+	}
+	public boolean hasCustomModelData() {
+		return hasCustomModelData;
+	}
+	public int getCustomModelData() {
+		return customModelData;
+	}
+	public int getAmount() {
+		return amount;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public static CustomItemStack fromItemStack(ItemStack is) {
+		if (!is.hasItemMeta()) return new CustomItemStack(is.getType(), false, false, 0, is.getAmount(), is.getType().toString());
+		ItemMeta meta = is.getItemMeta();
+		return new CustomItemStack(is.getType(), meta.isUnbreakable(), meta.hasCustomModelData(), meta.getCustomModelData(), is.getAmount(), meta.getDisplayName());
+	}
+	
+	public static ItemStack fromCiS(CustomItemStack cis) {
+		ItemStack is = new ItemStack(cis.getMaterial(), cis.getAmount());
+		ItemMeta ism = is.getItemMeta();
+		ism.setDisplayName(cis.getName());
+		if (cis.hasCustomModelData()) ism.setCustomModelData(cis.getCustomModelData());
+		is.setItemMeta(ism);
+		return is;
+	}
+
+	public static ItemStack fromCiSforCrafting(CustomItemStack cis) {
+		ItemStack is = new ItemStack(cis.getMaterial(), cis.getAmount());
+		ItemMeta ism = is.getItemMeta();
+		ism.setDisplayName(cis.getName());
+		is.setItemMeta(ism);
+		if (cis.hasCustomModelData()) {
+			//ism.setCustomModelData(cis.getCustomModelData());
+			net.minecraft.server.v1_14_R1.ItemStack is2 = CraftItemStack.asNMSCopy(is);
+			NBTTagCompound tag = is2.getOrCreateTag();
+			tag.setInt("CustomModelData", cis.getCustomModelData());
+			is2.setTag(tag);
+		}
+		
+		return is;
+	}
+	
+}

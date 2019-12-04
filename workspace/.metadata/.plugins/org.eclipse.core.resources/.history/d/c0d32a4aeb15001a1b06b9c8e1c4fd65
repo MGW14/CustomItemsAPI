@@ -1,0 +1,12 @@
+package work.mgnet.customstructuresapi.todo;
+
+import java.util.Random;
+
+public class LootRandomizer {
+	
+	public static boolean spawnLoot(int rng) {
+		if (new Random().nextInt(rng) == 1) return true;
+		return false;
+	}
+	
+}
