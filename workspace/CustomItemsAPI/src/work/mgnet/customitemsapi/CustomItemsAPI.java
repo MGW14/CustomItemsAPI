@@ -4,7 +4,6 @@
 package work.mgnet.customitemsapi;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -26,12 +25,12 @@ public class CustomItemsAPI extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		this.getLogger().info("Enabling CustomItemsAPI");
-		for (CustomRecipe customRecipe : recipes) { // Add Recipes
+		/*for (CustomRecipe customRecipe : recipes) { // Add Recipes
 			Bukkit.addRecipe(customRecipe.getRecipe(UUID.randomUUID().toString(), this));
 		}
 		for (CustomSwordRecipe customRecipe : recipesSword) { // Add more Recipes
 			Bukkit.addRecipe(customRecipe.getRecipe(UUID.randomUUID().toString(), this));
-		}
+		}*/
 		Bukkit.getPluginManager().registerEvents(new AntiCraftListener(), this); // Register Recipes
 	}
 	

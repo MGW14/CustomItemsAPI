@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="work.mgnet.customstructuresapi.todo.LootRandomizer"/>
-<fullyQualifiedTypeName name="org.bukkit.block.Chest"/>
 <fullyQualifiedTypeName name="work.mgnet.customstructuresapi.manager.BlockLocation"/>
 <fullyQualifiedTypeName name="org.bukkit.event.player.PlayerCommandPreprocessEvent"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -30,10 +27,8 @@
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="org.bukkit.event.Listener"/>
-<fullyQualifiedTypeName name="org.bukkit.inventory.ShapelessRecipe"/>
 <fullyQualifiedTypeName name="work.mgnet.customitemsapi.listener.AntiCraftListener"/>
 <fullyQualifiedTypeName name="org.bukkit.event.player.PlayerInteractEvent"/>
-<fullyQualifiedTypeName name="org.bukkit.Bukkit"/>
 <fullyQualifiedTypeName name="work.mgnet.customitemsapi.listener.HarchenTableListener"/>
 <fullyQualifiedTypeName name="net.minecraft.server.v1_14_R1.NBTTagCompound"/>
 <fullyQualifiedTypeName name="org.bukkit.inventory.meta.ItemMeta"/>
@@ -44,7 +39,6 @@
 <fullyQualifiedTypeName name="org.bukkit.event.inventory.InventoryMoveItemEvent"/>
 <fullyQualifiedTypeName name="org.bukkit.event.inventory.InventoryClickEvent"/>
 <fullyQualifiedTypeName name="org.bukkit.event.inventory.InventoryInteractEvent"/>
-<fullyQualifiedTypeName name="org.bukkit.inventory.ShapedRecipe"/>
 <fullyQualifiedTypeName name="org.bukkit.NamespacedKey"/>
 <fullyQualifiedTypeName name="org.bukkit.plugin.java.JavaPlugin"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
@@ -59,5 +53,11 @@
 <fullyQualifiedTypeName name="org.bukkit.Material"/>
 <fullyQualifiedTypeName name="work.mgnet.customitemsapi.data.CustomItemStack"/>
 <fullyQualifiedTypeName name="work.mgnet.customitemsapi.data.CustomSwordRecipe"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="org.bukkit.Bukkit"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.Recipe"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.ShapedRecipe"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.ShapelessRecipe"/>
 <fullyQualifiedTypeName name="work.mgnet.customitemsapi.data.CustomSword"/>
 </qualifiedTypeNameHistroy>

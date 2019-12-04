@@ -22,50 +22,48 @@ public class AntiCraftListener implements Listener {
 	public void onCraft(PrepareItemCraftEvent e) {
 		if (e.getInventory().getResult() == null) return; 
 		for (CustomRecipe recipe : CustomItemsAPI.recipes) {
-			if (e.getInventory().getResult().hasItemMeta() && e.getInventory().getRecipe().getResult().getItemMeta().hasDisplayName() && e.getInventory().getResult().getItemMeta().getDisplayName().equalsIgnoreCase(CustomItemStack.fromCiSforCrafting(recipe.getResult()).getItemMeta().getDisplayName())) {
-				ItemStack topleft = e.getInventory().getItem(1);
-				ItemStack topmid = e.getInventory().getItem(2);
-				ItemStack topright = e.getInventory().getItem(3);
-				ItemStack midleft = e.getInventory().getItem(4);
-				ItemStack midmid = e.getInventory().getItem(5);
-				ItemStack midright = e.getInventory().getItem(6);
-				ItemStack bottomright = e.getInventory().getItem(7);
-				ItemStack bottommid = e.getInventory().getItem(8);
-				ItemStack bottomleft = e.getInventory().getItem(9);
-				if (!isPossible(topleft, recipe.getTopleft())) break;
-				if (!isPossible(topmid, recipe.getTopmid())) break;
-				if (!isPossible(topright, recipe.getTopright())) break;
-				if (!isPossible(midleft, recipe.getMiddleleft())) break;
-				if (!isPossible(midmid, recipe.getMiddlemid())) break;
-				if (!isPossible(midright, recipe.getMiddleright())) break;
-				if (!isPossible(bottomright, recipe.getDownright())) break;
-				if (!isPossible(bottommid, recipe.getDownmid())) break;
-				if (!isPossible(bottomleft, recipe.getDownleft())) break;
-				return;
-			}
+			ItemStack topleft = e.getInventory().getItem(1);
+			ItemStack topmid = e.getInventory().getItem(2);
+			ItemStack topright = e.getInventory().getItem(3);
+			ItemStack midleft = e.getInventory().getItem(4);
+			ItemStack midmid = e.getInventory().getItem(5);
+			ItemStack midright = e.getInventory().getItem(6);
+			ItemStack bottomright = e.getInventory().getItem(7);
+			ItemStack bottommid = e.getInventory().getItem(8);
+			ItemStack bottomleft = e.getInventory().getItem(9);
+			if (!isPossible(topleft, recipe.getTopleft())) continue;
+			if (!isPossible(topmid, recipe.getTopmid())) continue;
+			if (!isPossible(topright, recipe.getTopright())) continue;
+			if (!isPossible(midleft, recipe.getMiddleleft())) continue;
+			if (!isPossible(midmid, recipe.getMiddlemid())) continue;
+			if (!isPossible(midright, recipe.getMiddleright())) continue;
+			if (!isPossible(bottomright, recipe.getDownright())) continue;
+			if (!isPossible(bottommid, recipe.getDownmid())) continue;
+			if (!isPossible(bottomleft, recipe.getDownleft())) continue;
+			e.getInventory().setResult(CustomItemStack.fromCiSforCrafting(recipe.getResult()));
+			return;
 		}
 		for (CustomSwordRecipe recipe : CustomItemsAPI.recipesSword) {
-			if (e.getInventory().getResult().hasItemMeta() && e.getInventory().getRecipe().getResult().getItemMeta().hasDisplayName() && e.getInventory().getResult().getItemMeta().getDisplayName().equalsIgnoreCase(CustomSword.fromCiSforCrafting(recipe.getResult()).getItemMeta().getDisplayName())) {
-				ItemStack topleft = e.getInventory().getItem(1);
-				ItemStack topmid = e.getInventory().getItem(2);
-				ItemStack topright = e.getInventory().getItem(3);
-				ItemStack midleft = e.getInventory().getItem(4);
-				ItemStack midmid = e.getInventory().getItem(5);
-				ItemStack midright = e.getInventory().getItem(6);
-				ItemStack bottomright = e.getInventory().getItem(7);
-				ItemStack bottommid = e.getInventory().getItem(8);
-				ItemStack bottomleft = e.getInventory().getItem(9);
-				if (!isPossible(topleft, recipe.getTopleft())) e.getInventory().setResult(null);
-				if (!isPossible(topmid, recipe.getTopmid())) e.getInventory().setResult(null);
-				if (!isPossible(topright, recipe.getTopright())) e.getInventory().setResult(null);
-				if (!isPossible(midleft, recipe.getMiddleleft())) e.getInventory().setResult(null);
-				if (!isPossible(midmid, recipe.getMiddlemid())) e.getInventory().setResult(null);
-				if (!isPossible(midright, recipe.getMiddleright())) e.getInventory().setResult(null);
-				if (!isPossible(bottomright, recipe.getDownright())) e.getInventory().setResult(null);
-				if (!isPossible(bottommid, recipe.getDownmid())) e.getInventory().setResult(null);
-				if (!isPossible(bottomleft, recipe.getDownleft())) e.getInventory().setResult(null);
-				return;
-			}
+			ItemStack topleft = e.getInventory().getItem(1);
+			ItemStack topmid = e.getInventory().getItem(2);
+			ItemStack topright = e.getInventory().getItem(3);
+			ItemStack midleft = e.getInventory().getItem(4);
+			ItemStack midmid = e.getInventory().getItem(5);
+			ItemStack midright = e.getInventory().getItem(6);
+			ItemStack bottomright = e.getInventory().getItem(7);
+			ItemStack bottommid = e.getInventory().getItem(8);
+			ItemStack bottomleft = e.getInventory().getItem(9);
+			if (!isPossible(topleft, recipe.getTopleft())) continue;
+			if (!isPossible(topmid, recipe.getTopmid())) continue;
+			if (!isPossible(topright, recipe.getTopright())) continue;
+			if (!isPossible(midleft, recipe.getMiddleleft())) continue;
+			if (!isPossible(midmid, recipe.getMiddlemid())) continue;
+			if (!isPossible(midright, recipe.getMiddleright())) continue;
+			if (!isPossible(bottomright, recipe.getDownright())) continue;
+			if (!isPossible(bottommid, recipe.getDownmid())) continue;
+			if (!isPossible(bottomleft, recipe.getDownleft())) continue;
+			e.getInventory().setResult(CustomSword.fromCiSforCrafting(recipe.getResult()));
+			return;
 		}
 		for (int i = 1; i < 10; i++) {
 			try {
