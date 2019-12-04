@@ -78,13 +78,10 @@ public class AntiCraftListener implements Listener {
 	}
 	
 	public boolean isPossible(ItemStack in, CustomItemStack in2) {
-		if (in == null) return true;
-		if (in2 == null) return true;
-		if (in.getType() == Material.AIR) return true;
-		if (in2.getMaterial() == Material.AIR) return true;
+		if (in == null && in2 == null) return true;
 		try {
-			if (!in2.hasCustomModelData()) return true;
-			return in.getItemMeta().getCustomModelData() == in2.getCustomModelData();
+			if (!in2.hasCustomModelData() && in.getType() == in2.getMaterial()) return true;
+			return in.getItemMeta().getCustomModelData() == in2.getCustomModelData() && in.getType() == in2.getMaterial();
 		} catch (Exception e) {
 			return false;
 		}
