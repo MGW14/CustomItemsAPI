@@ -3,6 +3,8 @@
  */
 package work.mgnet.customitemsapi.data;
 
+import java.util.Arrays;
+
 import org.bukkit.Material;
 import org.bukkit.craftbukkit.v1_14_R1.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
@@ -57,6 +59,27 @@ public class CustomSword extends CustomItemStack {
 		ItemMeta itemMeta = is.getItemMeta();
 		itemMeta.setDisplayName(cis.getName());
 		itemMeta.spigot().setUnbreakable(cis.isUnbreaking());
+		int base = 0;
+		switch (cis.getMaterial()) {
+		case WOODEN_SWORD:
+			base = 4;
+			break;
+		case GOLDEN_SWORD:
+			base = 4;
+			break;
+		case STONE_SWORD:
+			base = 5;
+			break;
+		case DIAMOND_SWORD:
+			base = 7;
+			break;
+		case IRON_SWORD:
+			base = 6;
+			break;
+		default:
+			break;
+		}
+		itemMeta.setLore(Arrays.asList("§2" + base + "Attack Damage"));
 		is.setItemMeta(itemMeta);
 		net.minecraft.server.v1_14_R1.ItemStack nmsStack = CraftItemStack.asNMSCopy(is);
         NBTTagCompound compound = (nmsStack.hasTag()) ? nmsStack.getTag() : new NBTTagCompound();
@@ -65,9 +88,10 @@ public class CustomSword extends CustomItemStack {
         if (cis.hasCustomModelData()) {
 			compound.setInt("CustomModelData", cis.getCustomModelData());
 		}
+        compound.setInt("HideFlags", 2);
         damage.set("AttributeName", new NBTTagString("generic.attackDamage"));
         damage.set("Name", new NBTTagString("generic.attackDamage"));
-        damage.set("Amount", new NBTTagInt(cis.attackDamage));
+        damage.set("Amount", new NBTTagInt(cis.attackDamage - base));
         damage.set("Operation", new NBTTagInt(0));
         damage.set("UUIDLeast", new NBTTagInt(894654));
         damage.set("UUIDMost", new NBTTagInt(2872));
