@@ -19,7 +19,6 @@ public class AntiCraftListener implements Listener {
 	// Unimportant!
 	@EventHandler
 	public void onCraft(PrepareItemCraftEvent e) {
-		if (e.getInventory().getResult() == null) return; 
 		for (CustomRecipe recipe : CustomItemsAPI.recipes) {
 			ItemStack topleft = e.getInventory().getItem(1);
 			ItemStack topmid = e.getInventory().getItem(2);

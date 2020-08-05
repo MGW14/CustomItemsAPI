@@ -1,9 +1,0 @@
-package work.mgnet.customstructuresapi.todo;
-
-public class LootRandomizer {
-	
-	public static boolean spawnLoot(int rng, ItemStack itemStack) {
-		
-	}
-	
-}

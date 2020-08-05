@@ -1,7 +1,0 @@
-package work.mgnet.customstructuresapi.listener;
-
-import org.bukkit.event.Listener;
-
-public class ChunkListener implements Listener {
-
-}
