@@ -4,11 +4,11 @@
 package work.mgnet.customitemsapi.data;
 
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_14_R1.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_16_R1.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import net.minecraft.server.v1_14_R1.NBTTagCompound;
+import net.minecraft.server.v1_16_R1.NBTTagCompound;
 
 public class CustomItemStack {
 	
@@ -68,7 +68,7 @@ public class CustomItemStack {
 		ism.setDisplayName(cis.getName());
 		is.setItemMeta(ism);
 		if (cis.hasCustomModelData()) {
-			net.minecraft.server.v1_14_R1.ItemStack is2 = CraftItemStack.asNMSCopy(is);
+			net.minecraft.server.v1_16_R1.ItemStack is2 = CraftItemStack.asNMSCopy(is);
 			NBTTagCompound tag = is2.getOrCreateTag();
 			tag.setInt("CustomModelData", cis.getCustomModelData());
 			is2.setTag(tag);

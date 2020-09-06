@@ -6,14 +6,14 @@ package work.mgnet.customitemsapi.data;
 import java.util.Arrays;
 
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_14_R1.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_16_R1.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import net.minecraft.server.v1_14_R1.NBTTagCompound;
-import net.minecraft.server.v1_14_R1.NBTTagInt;
-import net.minecraft.server.v1_14_R1.NBTTagList;
-import net.minecraft.server.v1_14_R1.NBTTagString;
+import net.minecraft.server.v1_16_R1.NBTTagCompound;
+import net.minecraft.server.v1_16_R1.NBTTagInt;
+import net.minecraft.server.v1_16_R1.NBTTagList;
+import net.minecraft.server.v1_16_R1.NBTTagString;
 
 public class CustomSword extends CustomItemStack {
 	
@@ -53,12 +53,11 @@ public class CustomSword extends CustomItemStack {
 	}
 	
 	// Not used for you!
-	@SuppressWarnings("deprecation")
 	public static ItemStack fromCiSforCrafting(CustomSword cis) {
 		ItemStack is = new ItemStack(cis.getMaterial(), cis.getAmount());
 		ItemMeta itemMeta = is.getItemMeta();
 		itemMeta.setDisplayName(cis.getName());
-		itemMeta.spigot().setUnbreakable(cis.isUnbreaking());
+		itemMeta.setUnbreakable(cis.isUnbreaking());
 		int base = 0;
 		switch (cis.getMaterial()) {
 		case WOODEN_SWORD:
@@ -81,7 +80,7 @@ public class CustomSword extends CustomItemStack {
 		}
 		itemMeta.setLore(Arrays.asList("§2" + base + "Attack Damage"));
 		is.setItemMeta(itemMeta);
-		net.minecraft.server.v1_14_R1.ItemStack nmsStack = CraftItemStack.asNMSCopy(is);
+		net.minecraft.server.v1_16_R1.ItemStack nmsStack = CraftItemStack.asNMSCopy(is);
         NBTTagCompound compound = (nmsStack.hasTag()) ? nmsStack.getTag() : new NBTTagCompound();
         NBTTagList modifiers = new NBTTagList();
         NBTTagCompound damage = new NBTTagCompound();
@@ -89,13 +88,13 @@ public class CustomSword extends CustomItemStack {
 			compound.setInt("CustomModelData", cis.getCustomModelData());
 		}
         compound.setInt("HideFlags", 2);
-        damage.set("AttributeName", new NBTTagString("generic.attackDamage"));
-        damage.set("Name", new NBTTagString("generic.attackDamage"));
-        damage.set("Amount", new NBTTagInt(cis.attackDamage - base));
-        damage.set("Operation", new NBTTagInt(0));
-        damage.set("UUIDLeast", new NBTTagInt(894654));
-        damage.set("UUIDMost", new NBTTagInt(2872));
-        damage.set("Slot", new NBTTagString("mainhand"));
+        damage.set("AttributeName", NBTTagString.create("generic.attackDamage"));
+        damage.set("Name", NBTTagString.create("generic.attackDamage"));
+        damage.set("Amount", NBTTagInt.a(cis.attackDamage - base));
+        damage.set("Operation", NBTTagInt.a(0));
+        damage.set("UUIDLeast", NBTTagInt.a(894654));
+        damage.set("UUIDMost", NBTTagInt.a(2872));
+        damage.set("Slot", NBTTagString.create("mainhand"));
      
         modifiers.add(damage);
         compound.set("AttributeModifiers", modifiers);
@@ -104,27 +103,26 @@ public class CustomSword extends CustomItemStack {
 		return is;
 	}
 	
-	@SuppressWarnings("deprecation")
 	public static ItemStack fromCiS(CustomSword cis) {
 		ItemStack is = new ItemStack(cis.getMaterial(), cis.getAmount());
 		ItemMeta itemMeta = is.getItemMeta();
-		itemMeta.spigot().setUnbreakable(cis.isUnbreaking());
+		itemMeta.setUnbreakable(cis.isUnbreaking());
 		itemMeta.setDisplayName(cis.getName());
 		is.setItemMeta(itemMeta);
-		net.minecraft.server.v1_14_R1.ItemStack nmsStack = CraftItemStack.asNMSCopy(is);
+		net.minecraft.server.v1_16_R1.ItemStack nmsStack = CraftItemStack.asNMSCopy(is);
         NBTTagCompound compound = (nmsStack.hasTag()) ? nmsStack.getTag() : new NBTTagCompound();
         NBTTagList modifiers = new NBTTagList();
         NBTTagCompound damage = new NBTTagCompound();
         if (cis.hasCustomModelData()) {
 			compound.setInt("CustomModelData", cis.getCustomModelData());
 		}
-        damage.set("AttributeName", new NBTTagString("generic.attackDamage"));
-        damage.set("Name", new NBTTagString("generic.attackDamage"));
-        damage.set("Amount", new NBTTagInt(cis.attackDamage));
-        damage.set("Operation", new NBTTagInt(0));
-        damage.set("UUIDLeast", new NBTTagInt(894654));
-        damage.set("UUIDMost", new NBTTagInt(2872));
-        damage.set("Slot", new NBTTagString("mainhand"));
+        damage.set("AttributeName", NBTTagString.create("generic.attackDamage"));
+        damage.set("Name", NBTTagString.create("generic.attackDamage"));
+        damage.set("Amount", NBTTagInt.a(cis.attackDamage));
+        damage.set("Operation", NBTTagInt.a(0));
+        damage.set("UUIDLeast", NBTTagInt.a(894654));
+        damage.set("UUIDMost", NBTTagInt.a(2872));
+        damage.set("Slot", NBTTagString.create("mainhand"));
      
         modifiers.add(damage);
         compound.set("AttributeModifiers", modifiers);
